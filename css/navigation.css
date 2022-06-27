@@ -1,0 +1,189 @@
+.blur__overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(.8rem);
+}
+
+.blur__overlay.is--active {
+    display: block;
+}
+
+.menu__navigation {
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 20;
+    background: #fff;
+    padding-bottom: 7rem;
+    height: 100%;
+    width: 80%;
+    max-width: 30rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 600;
+    overflow-y: scroll;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.5, 0, 0, 0.75);
+}
+
+.menu__navigation.is--active {
+    transform: translateX(0);
+}
+
+.menu__navigation ul {
+    margin: auto 0;
+    padding: 1.5rem 3.5rem;
+}
+
+.menu__navigation ul li  {
+    padding: 0.8rem 1.3rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    border-radius: 1.5rem; 
+    transition: background-color 0.33s ease;   
+}
+
+.menu__navigation a {
+    text-decoration: none;
+    color: #393c41;
+    font-size: 1.4rem;
+}
+
+.menu__navigation ul li:hover {
+    background: #0000000d;
+}
+
+.close {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 3rem 2rem;
+    text-align: right;
+    z-index: 25;
+    background: #fff;
+}
+
+.close__icon {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.reshuffle.up {
+    display: none;
+}
+
+.more {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav__right__arrow {
+    width: 1.35rem;
+    cursor: pointer;
+}
+
+.more__block {
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 21;
+    background: #fff;
+    padding: auto;
+    height: 100%;
+    width: 80%;
+    max-width: 30rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.5, 0, 0, 0.75);
+    color: #393c41;
+}
+
+.more__block.is--active {
+    transform: translateX(0);
+}
+
+
+.more__top {
+    top: 0;
+    width: 100%;
+    padding: 2rem 2.8rem;
+    padding-top: 3rem;
+    z-index: 25;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.back {
+    cursor: pointer;
+}
+
+.back_text {
+    position: absolute;
+    padding: 0.4rem 0;
+}
+
+.back_icon {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.more__close {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.more__block ul {
+    margin: auto 0;
+    padding: 1.5rem 3.5rem;
+}
+
+.more__block ul li  {
+    padding: 0.8rem 1.3rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    border-radius: 1.5rem; 
+    transition: background-color 0.33s ease-in-out;   
+}
+
+.more__block a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #393c41;
+}
+
+.more__block ul li:hover {
+    background: #0000000d;
+}
+
+.country_btn {
+    position: absolute;
+    padding: 0 1rem;
+}
+
+.menu__link.lang {
+    font-size: 1.2rem;
+}
+
+.menu__link.lang:hover {
+    border-bottom: 2px solid;
+    transition: #000 1s linear 0.3s;
+}
+
+.globe_icon {
+    width: 2rem;
+    cursor: pointer;
+    padding-bottom: 0.7rem;
+}
+

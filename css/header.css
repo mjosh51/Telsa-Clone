@@ -1,0 +1,96 @@
+
+.blank__top {
+    width: 100%;
+    padding: 1.5rem;
+    position: fixed;
+    z-index: 10;
+    background: #fff;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.blank__top__text {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.blank__top__text:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+.header__nav {
+    height: 5rem;
+    position: fixed;
+    width: 100%;
+    top: 9%;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.header__nav a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.header__brand {
+    height: 100%;
+    width: 11rem;
+    color: var(--primary-color);
+    margin-left: 2.5rem;
+}
+
+.header__left {
+    display: block;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.header__middle {
+    display: none;
+    margin-left: 1.5rem;   
+}
+
+.header__middle__btn {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0.8rem 1.2rem;
+    color: var(--secondary-color);
+    border-radius: 1rem;
+    transition: background-color 0.3s cubic-bezier(0.5, 0, 0, 0.75);
+}
+
+.header__middle__btn:hover {
+    background: #0000000d;
+}
+
+.header__right {
+     margin: auto 0;
+}
+
+.header__right__btn {
+    display: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0.7rem 1.2rem;
+    color: var(--secondary-color);
+    border-radius: 1rem;
+    transition: background-color 0.3s linear;
+}
+
+.header__right__btn:hover {
+    background: #0000000d;
+}
+
+.header__right__btn.menu {
+    display: inline-block;
+}
+
+
+

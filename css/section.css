@@ -1,0 +1,109 @@
+#fullpage.no-scroll {
+    overflow-y: hidden;
+}
+
+.section {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.section.one {
+    background-image: url(../media/1.avif);
+}
+
+.section.two {
+    background-image: url(../media/2.avif);
+}
+
+.section.three {
+    background-image: url(../media/3.avif);
+}
+
+.section.four {
+    background-image: url(../media/4.avif);
+}
+
+.section.five {
+    background-image: url(../media/5.avif);
+}
+
+.section.six {
+    background-image: url(../media/6.avif);
+}
+
+.section.seven {
+    background-image: url(../media/7.avif);
+}
+
+.section__content {
+    position: absolute;
+    left: 50%;
+    top: 18%;
+    width: 100%;
+    text-align: center;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+
+.section__content__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.section__content__subtitle {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.section__content__subtitle a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.section__content__subtitle a:hover  {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1.5px solid var(--primary-color);
+}
+
+.section__actions {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+}
+
+.section__actions__btn {
+    flex-basis: 50%;
+    padding: 1.3rem 1rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.section__actions__btn.custom__btn {
+    background: rgba(23, 26, 42, 0.8);
+    color: #fff;
+}
+
+.section__actions__btn.existing__btn {
+    background: rgba(255, 255, 255, 0.65);
+    color: var(--primary-color);
+}
+
+
+
