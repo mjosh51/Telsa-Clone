@@ -43,13 +43,13 @@
     height: 100%;
     width: 11rem;
     color: var(--primary-color);
-    margin-left: 2.5rem;
+    margin-left: 1.8rem;
 }
 
 .header__left {
     display: block;
     overflow: hidden;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
 }
 
 .header__middle {
